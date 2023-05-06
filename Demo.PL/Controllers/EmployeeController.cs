@@ -25,11 +25,18 @@ namespace Demo.PL.Controllers
         }
 
         //===================================== Index Method  ======================================
+        
+        ///You must be comment data annotation verb [HttpGet] because you will post a perameter to Index for Search
+        ///[HttpGet]
 
-        [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(string SearchValue)
         {
-            var employees = _employeeRepository.GetAll();
+            IEnumerable<Employee> employees;
+
+            if (string.IsNullOrEmpty(SearchValue))
+                employees = _employeeRepository.GetAll();
+            else
+                employees = _employeeRepository.SearchEmployeesByName(SearchValue);
 
             //Use Auto Mapper
             var mappedEmp = _mapper.Map<IEnumerable<Employee>, IEnumerable<EmployeeViewModel>>(employees);

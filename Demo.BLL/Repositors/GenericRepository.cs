@@ -13,7 +13,7 @@ namespace Demo.BLL.Repositors
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         //Attribute for DBContext
-        private readonly MVCAppDbContext _dbContext;
+        private protected readonly MVCAppDbContext _dbContext;
 
         //use Dependance Injection DbContext
         public GenericRepository(MVCAppDbContext dbContext)
