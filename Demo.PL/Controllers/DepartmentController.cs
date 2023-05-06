@@ -25,12 +25,22 @@ namespace Demo.PL.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            //Make a query set of all Data of Department
             var departments = _departmentRepository.GetAll();
-            //Send the query set of all data Model "Department".
+
+            //Passing data via Dictionary Object ViewData
+            ViewData["ViewDataTest"] = "Hello Everyone, This is the message from ViewData Dictionary Object";
+
+            //Passing data via Dynamic Property ViewBag
+            ViewBag.ViewBagTest = "Hello Everyone, This is the message from ViewBag Dynamic Property";
+
+            //Passing data via Dictionary Object TempData
+            TempData["TempDataTest"] = "Hello Everyone, This is the message from TempData Dictionary Object";
 
             //Use Auto Mapper
             var mappedDept = _mapper.Map<IEnumerable<Department>, IEnumerable<DepartmentViewModel>>(departments);
 
+            //Send the query set of all data Model "mappedDept".
             return View(mappedDept);
         }
         //===================================== Create Methods ======================================
@@ -43,15 +53,19 @@ namespace Demo.PL.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Department department)
+        public IActionResult Create(DepartmentViewModel departmentVM)
         {
             if (ModelState.IsValid) //For Check the validation on the service side.
             {
-                _departmentRepository.Add(department);
+                //Use Auto Mapper
+                var mappedDept = _mapper.Map<DepartmentViewModel, Department>(departmentVM);
+
+                //Add the mapper of departmentVM
+                _departmentRepository.Add(mappedDept);
                 return RedirectToAction(nameof(Index));
             }
             else
-                return View(department);
+                return View(departmentVM);
 
         }
 
@@ -70,8 +84,13 @@ namespace Demo.PL.Controllers
             if (department is null)
                 return NotFound();
 
+            TempData["DetailTempData"] = TempData["TempDataTest"];
+
+            //Use Auto Mapper
+            var mappedDept = _mapper.Map<Department, DepartmentViewModel>(department);
+
             //If the data of department found 
-            return View(viewName, department);
+            return View(viewName, mappedDept);
         }
 
         //===================================== Edit Methods ======================================
@@ -94,16 +113,19 @@ namespace Demo.PL.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit([FromRoute] int id, Department department)
+        public IActionResult Edit([FromRoute] int id, DepartmentViewModel departmentVM)
         {
-            if (id != department.Id)
+            if (id != departmentVM.Id)
                 return BadRequest();
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _departmentRepository.Update(department);
+                    //Use Auto Mapper
+                    var mappedDept = _mapper.Map<DepartmentViewModel, Department>(departmentVM);
+
+                    _departmentRepository.Update(mappedDept);
                     return RedirectToAction(nameof(Index));
                 }
                 catch (Exception ex)
@@ -116,7 +138,7 @@ namespace Demo.PL.Controllers
                     ModelState.AddModelError(string.Empty, ex.Message);//The AddModelError take two prameters (Key and Value)
                 }
             }
-            return View(department);
+            return View(departmentVM);
         }
 
         //===================================== Delete Methods ======================================
@@ -128,16 +150,19 @@ namespace Demo.PL.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Delete([FromRoute] int id, Department department)
+        public IActionResult Delete([FromRoute] int id, DepartmentViewModel departmentVM)
         {
-            if (id != department.Id)
+            if (id != departmentVM.Id)
                 return BadRequest();
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _departmentRepository.Delete(department);
+                    //Use Auto Mapper
+                    var mappedDept = _mapper.Map<DepartmentViewModel, Department>(departmentVM);
+
+                    _departmentRepository.Delete(mappedDept);
                     return RedirectToAction(nameof(Index));
                 }
                 catch (Exception ex)
@@ -146,7 +171,7 @@ namespace Demo.PL.Controllers
                 }
 
             }
-            return View(department);
+            return View(departmentVM);
         }
     }
 }

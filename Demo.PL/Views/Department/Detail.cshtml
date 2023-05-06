@@ -16,3 +16,9 @@
 |
 <a class="btn btn-light"        asp-action="Index">Back to List</a>
 
+@if (TempData["DetailTempData"] is not null)
+{
+    <div class="alert alert-secondary mt-3">
+        @TempData["DetailTempData"]
+    </div>
+}

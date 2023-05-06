@@ -4,12 +4,6 @@
     ViewData["Title"] = "All Departments";
 }
 
-@if (TempData["MessageTest"] is not null)
-{
-    <div class="alert alert-success mt-3">
-        @TempData["MessageTest"]
-    </div>
-}
 
 @if(Model.Count() > 0){
     <h1>All Departments</h1>
@@ -60,11 +54,23 @@ else{
         </div>
     }
 
+@if (ViewData["ViewDataTest"] is not null)
+{
     <div class="alert alert-info mt-3">
         @ViewData["ViewDataTest"]
     </div>
+}
 
-    <div class="alert alert-info mt-3">
+@if (ViewBag.ViewBagTest is not null)
+{
+    <div class="alert alert-success mt-3">
         @ViewBag.ViewBagTest
     </div>
+}
 
+@if (TempData["TempDataTest"] is not null)
+{
+    <div class="alert alert-secondary mt-3">
+        @TempData["TempDataTest"]
+    </div>
+}

@@ -58,3 +58,15 @@ G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3
 G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\refint\Demo.DAL.dll
 G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.pdb
 G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\ref\Demo.DAL.dll
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.deps.json
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.dll
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.pdb
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.AssemblyReference.cache
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfoInputs.cache
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfo.cs
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.CoreCompileInputs.cache
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.dll
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\obj\Debug\net5.0\refint\Demo.DAL.dll
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.pdb
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.DAL\obj\Debug\net5.0\ref\Demo.DAL.dll
