@@ -1,0 +1,60 @@
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.deps.json
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.AssemblyReference.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfoInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfo.cs
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.CoreCompileInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\refint\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\ref\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.deps.json
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.AssemblyReference.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfoInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfo.cs
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.CoreCompileInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\refint\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.DAL\obj\Debug\net5.0\ref\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\bin\Debug\net5.0\Demo.DAL.deps.json
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\bin\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\bin\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.AssemblyReference.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\obj\Debug\net5.0\Demo.DAL.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfoInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfo.cs
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.CoreCompileInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\obj\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\obj\Debug\net5.0\refint\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\obj\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.DAL\obj\Debug\net5.0\ref\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.deps.json
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.AssemblyReference.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfoInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfo.cs
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.CoreCompileInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\refint\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\ref\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.deps.json
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\bin\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.AssemblyReference.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfoInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.AssemblyInfo.cs
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.csproj.CoreCompileInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\refint\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.DAL\obj\Debug\net5.0\ref\Demo.DAL.dll

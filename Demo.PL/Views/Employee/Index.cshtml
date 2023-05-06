@@ -1,0 +1,66 @@
+﻿@*You Shoud Add "@Using Demo.DAL.Models" in the _ViewImports.cshtml file before import model "@model IEnumerable<Department>"*@
+@model IEnumerable<EmployeeViewModel>
+@{
+    ViewData["Title"] = "All Employees";
+}
+
+    <h1>All Employees</h1>
+    <br />
+    <br />
+
+@*asp-controller = is a Model *@
+<a asp-controller="Employee" asp-action="Create" class="btn btn-primary">
+    Create a new Department
+</a>
+
+@if(Model.Count() > 0){
+    <table class="table table-striped table-hover mt-4">
+        <thead>
+            <tr>
+                <td>@Html.DisplayNameFor(E => E.EmpName)</td>
+                <td>@Html.DisplayNameFor(E => E.EmpAge)</td>
+                <td>@Html.DisplayNameFor(E => E.FKDepartment)</td>
+                <td>@Html.DisplayNameFor(E => E.EmpAddress)</td>
+                <td>@Html.DisplayNameFor(E => E.EmpSalary)</td>
+                <td>@Html.DisplayNameFor(E => E.EmpIsActive)</td>
+                <td>@Html.DisplayNameFor(E => E.EmpEmail)</td>
+                <td>@Html.DisplayNameFor(E => E.EmpPhone)</td>
+                <td>@Html.DisplayNameFor(E => E.EmpHireDate)</td>
+                <td>@Html.DisplayNameFor(E => E.CreationDate)</td>
+                <td>Details</td>
+                <td>Update</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var employee in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(E => employee.EmpName)</td>
+                    <td>@Html.DisplayFor(E => employee.EmpAge)</td>
+                    <td>@Html.DisplayFor(E => employee.Department.Name)</td>
+                    <td>@Html.DisplayFor(E => employee.EmpAddress)</td>
+                    <td>@Html.DisplayFor(E => employee.EmpSalary)</td>
+                    <td>@Html.DisplayFor(E => employee.EmpIsActive)</td>
+                    <td>@Html.DisplayFor(E => employee.EmpEmail)</td>
+                    <td>@Html.DisplayFor(E => employee.EmpPhone)</td>
+                    <td>@Html.DisplayFor(E => employee.EmpHireDate)</td>
+                    <td>@Html.DisplayFor(E => employee.CreationDate)</td>
+
+                    @*This is calling for partial view => _ButtonsPartialView of (Detail, Edit, Delete)*@
+                    <partial name="_ButtonsPartialView" model="@employee.Id"/>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+} else {
+    <div class="mt-4 alert alert-warning">
+        <h3>There Is No Employees !! </h3>
+    </div>
+
+}
+
+
+

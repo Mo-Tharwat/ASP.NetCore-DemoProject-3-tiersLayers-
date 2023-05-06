@@ -1,0 +1,12 @@
+﻿@model DepartmentViewModel
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="DeptCode"></label>
+    <input class="form-control" asp-for="DeptCode" />
+    <span class="text-danger" asp-validation-for="DeptCode"></span>
+</div>
+<div class="form-group">
+    <label class="col-form-label" asp-for="DeptName"></label>
+    <input class="form-control" asp-for="DeptName" />
+    <span class="text-danger" asp-validation-for="DeptName"></span>
+</div>

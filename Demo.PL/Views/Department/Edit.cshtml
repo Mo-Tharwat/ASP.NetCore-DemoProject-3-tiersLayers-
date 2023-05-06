@@ -1,0 +1,27 @@
+﻿@model DepartmentViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Or Update Department</h1>
+
+<br />
+<br />
+
+
+<form asp-action="Edit">
+    @*This is tag related to collect all Errors in one html tag in special use it when use try catch with DB.*@
+    <div asp-validation-summary="All"></div>
+
+    @*Add all input tags in one partial view for (Create and Edit).*@
+    <partial name="PartialViews\CreateEditDepartmentPartialView" />
+
+    <input class="btn btn-primary" type="submit" value="Save" /> |
+    <a class="btn btn-light" asp-action="Index">Back to List</a>
+</form>
+
+@section ValidationScriptSection{
+    <partial name="_ValidationScriptsPartial"/>
+}
+
+

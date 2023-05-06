@@ -1,0 +1,18 @@
+﻿@model DepartmentViewModel
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Department Detail</h1>
+
+<br />
+<br />
+
+@*Add all input tags in one partial view for (Details and Delete).*@
+<partial name="PartialViews\DetialsDeleteDepartmentPartialView"/>
+
+<a Class="btn btn-secondary"    asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+|
+<a class="btn btn-light"        asp-action="Index">Back to List</a>
+

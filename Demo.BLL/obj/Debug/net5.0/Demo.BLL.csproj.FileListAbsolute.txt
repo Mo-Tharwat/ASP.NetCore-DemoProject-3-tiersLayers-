@@ -1,0 +1,75 @@
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.deps.json
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.AssemblyReference.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.AssemblyInfoInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.AssemblyInfo.cs
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.CoreCompileInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.CopyComplete
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\refint\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment2-Part2(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\ref\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.deps.json
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.AssemblyReference.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.AssemblyInfoInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.AssemblyInfo.cs
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.CoreCompileInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.CopyComplete
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\refint\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers)\Demo.BLL\obj\Debug\net5.0\ref\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\bin\Debug\net5.0\Demo.BLL.deps.json
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\bin\Debug\net5.0\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\bin\Debug\net5.0\Demo.BLL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\bin\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\bin\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.AssemblyReference.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\obj\Debug\net5.0\Demo.BLL.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\obj\Debug\net5.0\Demo.BLL.AssemblyInfoInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\obj\Debug\net5.0\Demo.BLL.AssemblyInfo.cs
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.CoreCompileInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.CopyComplete
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\obj\Debug\net5.0\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\obj\Debug\net5.0\refint\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\obj\Debug\net5.0\Demo.BLL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3(3-tiers layers) --\Demo.BLL\obj\Debug\net5.0\ref\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.deps.json
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.AssemblyReference.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.AssemblyInfoInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.AssemblyInfo.cs
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.CoreCompileInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.CopyComplete
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\refint\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment3 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\ref\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.deps.json
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.BLL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.DAL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\bin\Debug\net5.0\Demo.DAL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.AssemblyReference.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.AssemblyInfoInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.AssemblyInfo.cs
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.CoreCompileInputs.cache
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.csproj.CopyComplete
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\refint\Demo.BLL.dll
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\Demo.BLL.pdb
+G:\My Drive\Route\Assignment (Back-End)\07 ASP.NetCore\ASP.NetCoreAssignment4 (3-tiers layers)\Demo.BLL\obj\Debug\net5.0\ref\Demo.BLL.dll

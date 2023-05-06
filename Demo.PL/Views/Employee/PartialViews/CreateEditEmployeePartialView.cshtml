@@ -1,0 +1,65 @@
+﻿
+@model EmployeeViewModel
+
+
+@inject IDepartmentRepository departmentRepository
+
+@{
+    //var departmentViewData = new SelectList(ViewData["DepartmentsViewData"] as IEnumerable<Department>, "Id", "Name");
+
+    //var departmentViewBag = new SelectList(ViewBag.DepartmentsViewBag, "Id", "Name");
+
+    var departmentDependancyInjection = new SelectList(departmentRepository.GetAll(), "Id", "Name");
+
+
+}
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="EmpName"></label>
+    <input class="form-control" asp-for="EmpName" />
+    <span class="text-danger" asp-validation-for="EmpName"></span>
+</div>
+<div class="form-group">
+    <label class="col-form-label" asp-for="EmpAge"></label>
+    <input class="form-control" asp-for="EmpAge" />
+    <span class="text-danger" asp-validation-for="EmpAge"></span>
+</div>
+<div class="form-group">
+    <label class="col-form-label" asp-for="EmpAddress"></label>
+    <input class="form-control" asp-for="EmpAddress" />
+    <span class="text-danger" asp-validation-for="EmpAddress"></span>
+</div>
+<div class="form-group">
+    <label class="col-form-label" asp-for="EmpSalary"></label>
+    <input class="form-control" asp-for="EmpSalary" />
+    <span class="text-danger" asp-validation-for="EmpSalary"></span>
+</div>
+<div class="form-group">
+    <label class="col-form-label" asp-for="EmpIsActive"></label>
+    <input class="form-check" asp-for="EmpIsActive" />
+    <span class="text-danger" asp-validation-for="EmpIsActive"></span>
+</div>
+<div class="form-group">
+    <label class="col-form-label" asp-for="EmpEmail"></label>
+    <input class="form-control" asp-for="EmpEmail" />
+    <span class="text-danger" asp-validation-for="EmpEmail"></span>
+</div>
+<div class="form-group">
+    <label class="col-form-label" asp-for="EmpPhone"></label>
+    <input class="form-control" asp-for="EmpPhone" />
+    <span class="text-danger" asp-validation-for="EmpPhone"></span>
+</div>
+<div class="form-group">
+    <label class="col-form-label" asp-for="EmpHireDate"></label>
+    <input class="form-control" asp-for="EmpHireDate" />
+    <span class="text-danger" asp-validation-for="EmpHireDate"></span>
+</div>
+
+@* ============================== Select FK Department ============================== *@
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="FKDepartment"></label>
+    <select class="form-control" asp-for="FKDepartment" asp-items="@departmentDependancyInjection">
+        <option value="@null"> -- Select Department -- </option>
+    </select>
+</div>

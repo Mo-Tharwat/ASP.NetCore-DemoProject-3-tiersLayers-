@@ -1,0 +1,21 @@
+﻿@model EmployeeViewModel
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 class="text-danger text-center">Are You Sure To Delete This Employee</h1>
+
+<br />
+<br />
+
+<form asp-action="Delete">
+    @*This is tag related to collect all Errors in one html tag in special use it when use try catch with DB.*@
+    <div asp-validation-summary="All"></div>
+
+    @*Add all input tags in one partial view for (Details and Delete).*@
+    <partial name="PartialViews/DetailsDeleteEmployeePartialView" />
+
+    <input class="btn btn-danger" type="submit" value="Delete" /> |
+    <a class="btn btn-success" asp-action="Index">Cancel</a>
+</form>
+
