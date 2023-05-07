@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo.BLL.Interfaces
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
         public IEmployeeRepository EmployeeRepository { get; set; }
 
@@ -14,6 +14,5 @@ namespace Demo.BLL.Interfaces
 
         public int Complete();
 
-        public void Dispose();
     }
 }
