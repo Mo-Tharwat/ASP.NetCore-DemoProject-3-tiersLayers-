@@ -10,7 +10,7 @@
 
 @*asp-controller = is a Model *@
 <a asp-controller="Employee" asp-action="Create" class="btn btn-primary">
-    Create a new Department
+    Create a new Employee
 </a>
 
 <div class="row justify-content-center align-items-center mt-5">
@@ -36,6 +36,7 @@
                 <td>@Html.DisplayNameFor(E => E.EmpAge)</td>
                 <td>@Html.DisplayNameFor(E => E.FKDepartment)</td>
                 <td>@Html.DisplayNameFor(E => E.EmpAddress)</td>
+                <td>@Html.DisplayNameFor(E => E.ImageName)</td>
                 <td>@Html.DisplayNameFor(E => E.EmpSalary)</td>
                 <td>@Html.DisplayNameFor(E => E.EmpIsActive)</td>
                 <td>@Html.DisplayNameFor(E => E.EmpEmail)</td>
@@ -55,6 +56,10 @@
                     <td>@Html.DisplayFor(E => employee.EmpAge)</td>
                     <td>@Html.DisplayFor(E => employee.Department.Name)</td>
                     <td>@Html.DisplayFor(E => employee.EmpAddress)</td>
+                    <td>
+                        <img src="~/files/images/@employee.ImageName"
+                        class="img-fluid rounded" height="30" width="30"/>
+                    </td>
                     <td>@Html.DisplayFor(E => employee.EmpSalary)</td>
                     <td>@Html.DisplayFor(E => employee.EmpIsActive)</td>
                     <td>@Html.DisplayFor(E => employee.EmpEmail)</td>

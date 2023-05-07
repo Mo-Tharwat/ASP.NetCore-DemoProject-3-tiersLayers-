@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Demo.BLL.Interfaces;
 using Demo.DAL.Models;
+using Demo.PL.Helpers;
 using Demo.PL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -65,11 +66,14 @@ namespace Demo.PL.Controllers
         {
             if (ModelState.IsValid) //For Check the validation on the service side.
             {
+                //Before make mapper add image file
+                employeeVM.ImageName = DocumentSetting.UploadFile(employeeVM.Image, "Images");
+
                 //Use Auto Mapper
                 var mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(employeeVM);
 
                 _unitOfWork.EmployeeRepository.Add(mappedEmp);
-
+                
                 //For Save the changes on DB
                 _unitOfWork.Complete();
 
@@ -132,6 +136,9 @@ namespace Demo.PL.Controllers
             {
                 try
                 {
+                    //Before make mapper add image file
+                    employeeVM.ImageName = DocumentSetting.UploadFile(employeeVM.Image, "Images");
+
                     //Use Auto Mapper
                     var mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(employeeVM);
 
@@ -180,7 +187,10 @@ namespace Demo.PL.Controllers
                     _unitOfWork.EmployeeRepository.Delete(mappedEmp);
 
                     //For Save the changes on DB
-                    _unitOfWork.Complete();
+                    int countTransactions = _unitOfWork.Complete();
+
+                    if (countTransactions > 0)
+                        DocumentSetting.DeleteFile(employeeVM.ImageName, "Images");
 
                     return RedirectToAction(nameof(Index));
                 }
