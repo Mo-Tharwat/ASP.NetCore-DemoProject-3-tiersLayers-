@@ -2,14 +2,14 @@
 @model EmployeeViewModel
 
 
-@inject IDepartmentRepository departmentRepository
+@inject IUnitOfWork UnitOfWork
 
 @{
     //var departmentViewData = new SelectList(ViewData["DepartmentsViewData"] as IEnumerable<Department>, "Id", "Name");
 
     //var departmentViewBag = new SelectList(ViewBag.DepartmentsViewBag, "Id", "Name");
 
-    var departmentDependancyInjection = new SelectList(departmentRepository.GetAll(), "Id", "Name");
+    var departmentDependancyInjection = new SelectList(UnitOfWork.DepartmentRepository.GetAll(), "Id", "Name");
 
 
 }

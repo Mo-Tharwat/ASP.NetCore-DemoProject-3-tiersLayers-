@@ -16,12 +16,12 @@ namespace Demo.BLL.Interfaces
         T GetById(int id);
 
         //Insert a new Department
-        int Add(T item);
+        void Add(T item);
 
         //Update a Department
-        int Update(T item);
+        void Update(T item);
 
         //Delete a Department
-        int Delete(T item);
+        void Delete(T item);
     }
 }

@@ -10,15 +10,17 @@ namespace Demo.PL.Controllers
 {
     public class EmployeeController : Controller
     {
-        private readonly IEmployeeRepository _employeeRepository;
+        //private readonly IEmployeeRepository _employeeRepository;
         private readonly IMapper _mapper;
+        private readonly IUnitOfWork _unitOfWork;
 
         //private readonly IDepartmentRepository _departmentRepository;
 
-        public EmployeeController(IEmployeeRepository employeeRepository, /*, IDepartmentRepository departmentRepository*/ IMapper mapper)
+        public EmployeeController(/*IEmployeeRepository employeeRepository,*/ /*, IDepartmentRepository departmentRepository*/ IMapper mapper, IUnitOfWork unitOfWork)
         {
-            _employeeRepository = employeeRepository;
+            //_employeeRepository = employeeRepository;
             _mapper = mapper;
+            _unitOfWork = unitOfWork;
 
             //For Use it to create an object for Drop down list FK Department ID 
             //_departmentRepository = departmentRepository;
@@ -34,9 +36,9 @@ namespace Demo.PL.Controllers
             IEnumerable<Employee> employees;
 
             if (string.IsNullOrEmpty(SearchValue))
-                employees = _employeeRepository.GetAll();
+                employees = _unitOfWork.EmployeeRepository.GetAll();
             else
-                employees = _employeeRepository.SearchEmployeesByName(SearchValue);
+                employees = _unitOfWork.EmployeeRepository.SearchEmployeesByName(SearchValue);
 
             //Use Auto Mapper
             var mappedEmp = _mapper.Map<IEnumerable<Employee>, IEnumerable<EmployeeViewModel>>(employees);
@@ -66,7 +68,11 @@ namespace Demo.PL.Controllers
                 //Use Auto Mapper
                 var mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(employeeVM);
 
-                _employeeRepository.Add(mappedEmp);
+                _unitOfWork.EmployeeRepository.Add(mappedEmp);
+
+                //For Save the changes on DB
+                _unitOfWork.Complete();
+
                 return RedirectToAction(nameof(Index));
             }
 
@@ -84,7 +90,7 @@ namespace Demo.PL.Controllers
                 return BadRequest();
 
             //Create an object from employee.
-            var employee = _employeeRepository.GetById(id.Value);
+            var employee = _unitOfWork.EmployeeRepository.GetById(id.Value);
 
             //Use Auto Mapper as a reverse()
             var mappedEmp = _mapper.Map<Employee, EmployeeViewModel>(employee);
@@ -129,7 +135,12 @@ namespace Demo.PL.Controllers
                     //Use Auto Mapper
                     var mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(employeeVM);
 
-                    _employeeRepository.Update(mappedEmp);
+                    //Use Unit OF Work
+                    _unitOfWork.EmployeeRepository.Update(mappedEmp);
+
+                    //For Save the changes on DB
+                    _unitOfWork.Complete();
+
                     return RedirectToAction(nameof(Index));
                 }
                 catch (Exception ex)
@@ -166,7 +177,11 @@ namespace Demo.PL.Controllers
                     //Use Auto Mapper
                     var mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(employeeVM);
 
-                    _employeeRepository.Delete(mappedEmp);
+                    _unitOfWork.EmployeeRepository.Delete(mappedEmp);
+
+                    //For Save the changes on DB
+                    _unitOfWork.Complete();
+
                     return RedirectToAction(nameof(Index));
                 }
                 catch (Exception ex)

@@ -1,3 +1,4 @@
+using Demo.BLL;
 using Demo.BLL.Interfaces;
 using Demo.BLL.Repositors;
 using Demo.DAL.Contexts;
@@ -38,14 +39,17 @@ namespace Demo.PL
                 });
 
             //Use Dependancy Injection For Department
-            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            //services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 
             //Use Dependancy Injection For Employee
-            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            //services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
-            //Use  Dependancy Injection For Auto Mapper
+            //Use Dependancy Injection For Auto Mapper
             services.AddAutoMapper(M => M.AddProfile(new EmployeeProfile()));
             services.AddAutoMapper(M => M.AddProfile(new DepartmentProfile()));
+
+            //Use Dependancy Injection For Unit Of Work
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

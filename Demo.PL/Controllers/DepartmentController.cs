@@ -11,13 +11,15 @@ namespace Demo.PL.Controllers
 {
     public class DepartmentController : Controller
     {
-        private readonly IDepartmentRepository _departmentRepository;
+        //private readonly IDepartmentRepository _departmentRepository;
         private readonly IMapper _mapper;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public DepartmentController(IDepartmentRepository departmentRepository, IMapper mapper)
+        public DepartmentController(/*IDepartmentRepository departmentRepository,*/ IMapper mapper, IUnitOfWork unitOfWork)
         {
-            _departmentRepository = departmentRepository;
+            //_departmentRepository = departmentRepository;
             _mapper = mapper;
+            _unitOfWork = unitOfWork;
         }
 
         //===================================== Index Method  ======================================
@@ -26,7 +28,7 @@ namespace Demo.PL.Controllers
         public IActionResult Index()
         {
             //Make a query set of all Data of Department
-            var departments = _departmentRepository.GetAll();
+            var departments = _unitOfWork.DepartmentRepository.GetAll();
 
             //Passing data via Dictionary Object ViewData
             ViewData["ViewDataTest"] = "Hello Everyone, This is the message from ViewData Dictionary Object";
@@ -61,7 +63,7 @@ namespace Demo.PL.Controllers
                 var mappedDept = _mapper.Map<DepartmentViewModel, Department>(departmentVM);
 
                 //Add the mapper of departmentVM
-                _departmentRepository.Add(mappedDept);
+                _unitOfWork.DepartmentRepository.Add(mappedDept);
                 return RedirectToAction(nameof(Index));
             }
             else
@@ -78,7 +80,7 @@ namespace Demo.PL.Controllers
                 return BadRequest();
 
             //Create an object from department.
-            var department = _departmentRepository.GetById(id.Value);
+            var department = _unitOfWork.DepartmentRepository.GetById(id.Value);
 
             //If the query of department is empty or (Id wrong)
             if (department is null)
@@ -125,7 +127,7 @@ namespace Demo.PL.Controllers
                     //Use Auto Mapper
                     var mappedDept = _mapper.Map<DepartmentViewModel, Department>(departmentVM);
 
-                    _departmentRepository.Update(mappedDept);
+                    _unitOfWork.DepartmentRepository.Update(mappedDept);
                     return RedirectToAction(nameof(Index));
                 }
                 catch (Exception ex)
@@ -162,7 +164,7 @@ namespace Demo.PL.Controllers
                     //Use Auto Mapper
                     var mappedDept = _mapper.Map<DepartmentViewModel, Department>(departmentVM);
 
-                    _departmentRepository.Delete(mappedDept);
+                    _unitOfWork.DepartmentRepository.Delete(mappedDept);
                     return RedirectToAction(nameof(Index));
                 }
                 catch (Exception ex)
