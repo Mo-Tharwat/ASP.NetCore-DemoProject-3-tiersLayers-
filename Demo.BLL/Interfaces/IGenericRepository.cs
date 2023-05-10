@@ -10,13 +10,13 @@ namespace Demo.BLL.Interfaces
     public interface IGenericRepository<T> where T : class
     {
         //Get all Department
-        IEnumerable<T> GetAll();
+        Task<IEnumerable<T>> GetAll();
 
         //Get one Department
-        T GetById(int id);
+        Task<T> GetById(int id);
 
         //Insert a new Department
-        void Add(T item);
+        Task Add(T item);
 
         //Update a Department
         void Update(T item);

@@ -20,22 +20,22 @@ namespace Demo.BLL.Repositors
         {
             _dbContext = dbContext;
         }
-        public void Add(T item) => _dbContext.Set<T>().Add(item);
+        public async Task Add(T item) => await _dbContext.Set<T>().AddAsync(item);
 
 
         public void Delete(T item) => _dbContext.Set<T>().Remove(item);
 
 
-        public IEnumerable<T> GetAll()
+        public async Task<IEnumerable<T>> GetAll()
         {
             if(typeof(T) == typeof(Employee))
-                return (IEnumerable<T>) _dbContext.Employees.Include(E => E.Department).ToList();
+                return (IEnumerable<T>) await _dbContext.Employees.Include(E => E.Department).ToListAsync();
             else
-                return _dbContext.Set<T>().ToList();
+                return await _dbContext.Set<T>().ToListAsync();
         }
             //=> _dbContext.Set<T>().Distinct().ToList();
 
-        public T GetById(int id) => _dbContext.Set<T>().Find(id);
+        public async Task<T> GetById(int id) => await _dbContext.Set<T>().FindAsync(id);
 
         public void Update(T item) => _dbContext.Set<T>().Update(item);
     }

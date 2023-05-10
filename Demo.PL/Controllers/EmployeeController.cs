@@ -6,6 +6,7 @@ using Demo.PL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Demo.PL.Controllers
 {
@@ -32,12 +33,12 @@ namespace Demo.PL.Controllers
         ///You must be comment data annotation verb [HttpGet] because you will post a perameter to Index for Search
         ///[HttpGet]
 
-        public IActionResult Index(string SearchValue)
+        public async Task <IActionResult> Index(string SearchValue)
         {
             IEnumerable<Employee> employees;
 
             if (string.IsNullOrEmpty(SearchValue))
-                employees = _unitOfWork.EmployeeRepository.GetAll();
+                employees =await _unitOfWork.EmployeeRepository.GetAll();
             else
                 employees = _unitOfWork.EmployeeRepository.SearchEmployeesByName(SearchValue);
 
@@ -62,7 +63,7 @@ namespace Demo.PL.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(EmployeeViewModel employeeVM)
+        public async Task<IActionResult> Create(EmployeeViewModel employeeVM)
         {
             if (ModelState.IsValid) //For Check the validation on the service side.
             {
@@ -72,10 +73,10 @@ namespace Demo.PL.Controllers
                 //Use Auto Mapper
                 var mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(employeeVM);
 
-                _unitOfWork.EmployeeRepository.Add(mappedEmp);
+                 await _unitOfWork.EmployeeRepository.Add(mappedEmp);
                 
                 //For Save the changes on DB
-                _unitOfWork.Complete();
+                await _unitOfWork.Complete();
 
                 return RedirectToAction(nameof(Index));
             }
@@ -87,14 +88,14 @@ namespace Demo.PL.Controllers
 
         //===================================== Detail Method ======================================
         [HttpGet]
-        public IActionResult Detail(int? id, string viewName = "Detail")
+        public async Task<IActionResult> Detail(int? id, string viewName = "Detail")
         {
             //If the user not passing id prameter
             if (id is null)
                 return BadRequest();
 
             //Create an object from employee.
-            var employee = _unitOfWork.EmployeeRepository.GetById(id.Value);
+            var employee = await _unitOfWork.EmployeeRepository.GetById(id.Value);
 
             //Use Auto Mapper as a reverse()
             var mappedEmp = _mapper.Map<Employee, EmployeeViewModel>(employee);
@@ -109,7 +110,7 @@ namespace Demo.PL.Controllers
 
         //===================================== Edit Methods ======================================
         [HttpGet]
-        public IActionResult Edit(int? id)
+        public Task<IActionResult> Edit(int? id)
         {
             ///This is the same body of Detail.
             ///if (id is null)
@@ -127,7 +128,7 @@ namespace Demo.PL.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit([FromRoute] int id, EmployeeViewModel employeeVM)
+        public async Task<IActionResult> Edit([FromRoute] int id, EmployeeViewModel employeeVM)
         {
             if (id != employeeVM.Id)
                 return BadRequest();
@@ -146,7 +147,7 @@ namespace Demo.PL.Controllers
                     _unitOfWork.EmployeeRepository.Update(mappedEmp);
 
                     //For Save the changes on DB
-                    _unitOfWork.Complete();
+                    await _unitOfWork.Complete();
 
                     return RedirectToAction(nameof(Index));
                 }
@@ -165,14 +166,14 @@ namespace Demo.PL.Controllers
 
         //===================================== Delete Methods ======================================
         [HttpGet]
-        public IActionResult Delete(int id)
+        public Task<IActionResult> Delete(int id)
         {
             return Detail(id, "Delete");
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Delete([FromRoute] int id, EmployeeViewModel employeeVM)
+        public async Task<IActionResult> DeleteAsync([FromRoute] int id, EmployeeViewModel employeeVM)
         {
             if (id != employeeVM.Id)
                 return BadRequest();
@@ -187,7 +188,7 @@ namespace Demo.PL.Controllers
                     _unitOfWork.EmployeeRepository.Delete(mappedEmp);
 
                     //For Save the changes on DB
-                    int countTransactions = _unitOfWork.Complete();
+                    int countTransactions = await _unitOfWork.Complete();
 
                     if (countTransactions > 0)
                         DocumentSetting.DeleteFile(employeeVM.ImageName, "Images");

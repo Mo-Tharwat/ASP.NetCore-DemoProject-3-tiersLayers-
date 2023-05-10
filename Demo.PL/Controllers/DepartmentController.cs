@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Demo.PL.Controllers
 {
@@ -25,10 +26,10 @@ namespace Demo.PL.Controllers
         //===================================== Index Method  ======================================
 
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             //Make a query set of all Data of Department
-            var departments = _unitOfWork.DepartmentRepository.GetAll();
+            var departments = await _unitOfWork.DepartmentRepository.GetAll();
 
             //Passing data via Dictionary Object ViewData
             ViewData["ViewDataTest"] = "Hello Everyone, This is the message from ViewData Dictionary Object";
@@ -55,7 +56,7 @@ namespace Demo.PL.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(DepartmentViewModel departmentVM)
+        public async Task<IActionResult> Create(DepartmentViewModel departmentVM)
         {
             if (ModelState.IsValid) //For Check the validation on the service side.
             {
@@ -63,7 +64,7 @@ namespace Demo.PL.Controllers
                 var mappedDept = _mapper.Map<DepartmentViewModel, Department>(departmentVM);
 
                 //Add the mapper of departmentVM
-                _unitOfWork.DepartmentRepository.Add(mappedDept);
+               await _unitOfWork.DepartmentRepository.Add(mappedDept);
                 return RedirectToAction(nameof(Index));
             }
             else
@@ -73,14 +74,14 @@ namespace Demo.PL.Controllers
 
         //===================================== Detail Method ======================================
         [HttpGet]
-        public IActionResult Detail(int? id, string viewName = "Detail")
+        public async Task<IActionResult> Detail(int? id, string viewName = "Detail")
         {
             //If the user not passing id prameter
             if (id is null)
                 return BadRequest();
 
             //Create an object from department.
-            var department = _unitOfWork.DepartmentRepository.GetById(id.Value);
+            var department = await _unitOfWork.DepartmentRepository.GetById(id.Value);
 
             //If the query of department is empty or (Id wrong)
             if (department is null)
@@ -97,7 +98,7 @@ namespace Demo.PL.Controllers
 
         //===================================== Edit Methods ======================================
         [HttpGet]
-        public IActionResult Edit(int? id)
+        public Task<IActionResult> Edit(int? id)
         {
             ///This is the same body of Detail.
             ///if (id is null)
@@ -145,7 +146,7 @@ namespace Demo.PL.Controllers
 
         //===================================== Delete Methods ======================================
         [HttpGet]
-        public IActionResult Delete(int id)
+        public Task<IActionResult> Delete(int id)
         {
             return Detail(id, "Delete");
         }

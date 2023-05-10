@@ -12,7 +12,7 @@ namespace Demo.BLL.Interfaces
 
         public IDepartmentRepository DepartmentRepository { get; set; }
 
-        public int Complete();
+        Task<int> Complete();
 
     }
 }

@@ -24,11 +24,8 @@ namespace Demo.BLL
             _dbContext = dbContext;
         }
 
-        public int Complete()
-        {
-            return _dbContext.SaveChanges();
+        public async Task<int> Complete() => await _dbContext.SaveChangesAsync();
 
-        }
 
         public void Dispose()
         {

@@ -9,7 +9,7 @@
 
     //var departmentViewBag = new SelectList(ViewBag.DepartmentsViewBag, "Id", "Name");
 
-    var departmentDependancyInjection = new SelectList(UnitOfWork.DepartmentRepository.GetAll(), "Id", "Name");
+    var departmentDependancyInjection = new SelectList(await UnitOfWork.DepartmentRepository.GetAll(), "Id", "Name");
 
 
 }
