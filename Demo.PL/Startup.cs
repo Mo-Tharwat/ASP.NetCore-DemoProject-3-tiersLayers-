@@ -2,10 +2,12 @@ using Demo.BLL;
 using Demo.BLL.Interfaces;
 using Demo.BLL.Repositors;
 using Demo.DAL.Contexts;
+using Demo.DAL.Models;
 using Demo.PL.MappingProfiles;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -50,10 +52,29 @@ namespace Demo.PL
 
             //Use Dependancy Injection For Unit Of Work
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            #region Authentications Configurtion For Use Dependany Injection
+
+            //Use Dependancy Injection For Identity User (Application User)
+            services.AddAuthentication();
+
+            //Use Dependancy Injection For implement interfaces Identity User & Identity Role
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+            {
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 4;
+
+            })
+                .AddEntityFrameworkStores<MVCAppDbContext>(); 
+            #endregion
+
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {

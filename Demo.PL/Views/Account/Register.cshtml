@@ -1,0 +1,38 @@
+﻿@model RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+<div class="main-agileinfo">
+
+	<div class="agileits-top">
+		<form asp-action="Register" method="post">
+@*			<input class="text" type="text" name="Username" placeholder="Username" required="">*@
+			<input class="text"			asp-for="FName"				placeholder="First Name"		required="">
+			<input class="text"			asp-for="LName"				placeholder="Last Name"			required="">
+			<input class="text"			asp-for="Email"				placeholder="Email"				required="">
+			<input class="text"			asp-for="Password"			placeholder="Password"			required="">
+			<input class="text"			asp-for="ConfirmPassword"	placeholder="Confirm Password"	required="">
+
+			<div class="wthree-text">
+				<label class="anim">
+					<input asp-for="IsAgree" class="checkbox" required="">
+					<span>I Agree To The Terms & Conditions</span>
+				</label>
+				<div class="clear"> </div>
+			</div>
+			<input type="submit" value="SIGNUP">
+		</form>
+		@*The following section of summary validations*@
+		<div asp-validation-summary="All"></div>
+
+		<p>Don't need to create new Account? <a asp-action="Login"> Login Now!</a></p>
+	</div>
+</div>
+
+@*For running summary validation must be calling the "ValidationScriptSection" from _AuthLayout*@
+@section ValidationScriptSection{
+	<partial name="_ValidationScriptsPartial" />
+}
