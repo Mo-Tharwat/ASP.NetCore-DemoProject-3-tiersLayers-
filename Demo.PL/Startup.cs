@@ -4,6 +4,7 @@ using Demo.BLL.Repositors;
 using Demo.DAL.Contexts;
 using Demo.DAL.Models;
 using Demo.PL.MappingProfiles;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -56,7 +57,13 @@ namespace Demo.PL
             #region Authentications Configurtion For Use Dependany Injection
 
             //Use Dependancy Injection For Identity User (Application User)
-            services.AddAuthentication();
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options => 
+                {
+                    options.LoginPath = "Account/Login";
+                    options.AccessDeniedPath = "Home/Error";
+                });
+
 
             //Use Dependancy Injection For implement interfaces Identity User & Identity Role
             services.AddIdentity<ApplicationUser, IdentityRole>(options =>
@@ -68,7 +75,8 @@ namespace Demo.PL
                 options.Password.RequiredLength = 4;
 
             })
-                .AddEntityFrameworkStores<MVCAppDbContext>(); 
+                .AddEntityFrameworkStores<MVCAppDbContext>()
+                .AddDefaultTokenProviders(); 
             #endregion
 
         }
@@ -91,7 +99,11 @@ namespace Demo.PL
 
             app.UseRouting();
 
-            app.UseAuthorization();
+			#region Add Middleware for Authentication & Authorization 
+
+			app.UseAuthentication();
+            app.UseAuthorization(); 
+            #endregion
 
             app.UseEndpoints(endpoints =>
             {

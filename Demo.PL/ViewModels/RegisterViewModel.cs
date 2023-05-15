@@ -24,6 +24,7 @@ namespace Demo.PL.ViewModels
         [Display(Name ="Confirm Password")]
         public string ConfirmPassword { get; set; }
 
+		[Required(ErrorMessage = "The Policy is required to agree on it.")]
         public bool IsAgree { get; set; }
 
     }

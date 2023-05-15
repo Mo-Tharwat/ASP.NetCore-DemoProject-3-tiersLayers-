@@ -9,15 +9,26 @@
 
 	<div class="agileits-top">
 		<form asp-action="Register" method="post">
-@*			<input class="text" type="text" name="Username" placeholder="Username" required="">*@
+			@*The following section of summary validations*@
+			<div asp-validation-summary="All"></div>
+
 			<input class="text"			asp-for="FName"				placeholder="First Name"		required="">
+			<span class="text-danger" asp-validation-for="FName"></span>
+
 			<input class="text"			asp-for="LName"				placeholder="Last Name"			required="">
+			<span class="text-danger" asp-validation-for="LName"></span>
+
 			<input class="text"			asp-for="Email"				placeholder="Email"				required="">
+			<span class="text-danger" asp-validation-for="Email"></span>
+
 			<input class="text"			asp-for="Password"			placeholder="Password"			required="">
+			<span class="text-danger" asp-validation-for="Password"></span>
+
 			<input class="text"			asp-for="ConfirmPassword"	placeholder="Confirm Password"	required="">
+			<span class="text-danger" asp-validation-for="ConfirmPassword"></span>
 
 			<div class="wthree-text">
-				<label class="anim">
+				<label class="anim mt-3">
 					<input asp-for="IsAgree" class="checkbox" required="">
 					<span>I Agree To The Terms & Conditions</span>
 				</label>
@@ -25,8 +36,6 @@
 			</div>
 			<input type="submit" value="SIGNUP">
 		</form>
-		@*The following section of summary validations*@
-		<div asp-validation-summary="All"></div>
 
 		<p>Don't need to create new Account? <a asp-action="Login"> Login Now!</a></p>
 	</div>

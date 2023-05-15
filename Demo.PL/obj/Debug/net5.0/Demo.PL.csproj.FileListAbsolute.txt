@@ -2640,3 +2640,4 @@ C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoPr
 C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.PL\obj\Debug\net5.0\Razor\Views\Shared\_AuthLayout.cshtml.g.cs
 C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.PL\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.PL\obj\Debug\net5.0\Razor\Views\Shared\_FontAwesome+Bootstrip.cshtml.g.cs
+C:\Users\mth_g\Videos\Web Full Stack - Route\Back-End Courses\ASP.NetCore-DemoProject(3-tiersLayers)\Demo.PL\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs

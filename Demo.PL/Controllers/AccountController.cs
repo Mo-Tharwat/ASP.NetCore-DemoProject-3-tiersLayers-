@@ -51,11 +51,39 @@ namespace Demo.PL.Controllers
             return View(viewModel);
         }
 
-        [HttpPost]
-        public IActionResult Login() 
+		public IActionResult Login()
+		{
+			return View();
+		}
+
+		[HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel viewModel) 
         { 
-            return View(); 
+            if(ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(viewModel.Email);
+
+                if(user is not null)
+                {
+                    var flagCheck = await _userManager.CheckPasswordAsync(user, viewModel.Password);
+
+                    if (flagCheck)
+                    {
+                        await _signInManager.PasswordSignInAsync(user, viewModel.Password, viewModel.RememberMe, false);
+                        return RedirectToAction("Index","Home");
+                    }
+                    ModelState.AddModelError(string.Empty, "Invaled user name or Password");
+                }
+                ModelState.AddModelError(string.Empty, "Invaled user name or Password");
+            }
+            return View(viewModel); 
+        }
+
+        public new async Task<IActionResult> SignOut()
+        {
+             await _signInManager.SignOutAsync();
+            return RedirectToAction(nameof(Login), "Account");
         }
 
     }
-}
+}   
